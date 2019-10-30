@@ -1,0 +1,31 @@
+@import '../variables.less';
+
+.app__content__idea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--default-white);
+  color: var(--text-color);
+  border-radius: 8px;
+  min-height: fit-content;
+  margin: 0.5em 0;
+  padding: 0.8em 1em;
+  width: 100%;
+  overflow: hidden;
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    justify-self: flex-end;
+    background-color: transparent !important;
+    color: var(--danger-red) !important;
+    margin-left: 1em;
+    &:hover {
+      color: var(--constant-white) !important;
+      background-color: var(--danger-red) !important;
+    }
+  }
+}

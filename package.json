@@ -1,0 +1,24 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html --out-dir build --no-source-maps --no-content-hash",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^7.2.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "less": "^3.10.3",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}
